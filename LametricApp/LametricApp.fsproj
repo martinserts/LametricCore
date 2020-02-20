@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>LametricApp</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chessie" Version="0.6.0" />
+    <PackageReference Include="FSharpx.Collections" Version="3.0.1" />
+    <PackageReference Include="Giraffe" Version="6.0.0" />
+    <PackageReference Include="TaskBuilder.fs" Version="2.1.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ServiceHelper.fs" />
+    <Compile Include="Eklase.fs" />
+    <Compile Include="Kengaroos.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="web.config" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="WebRoot\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaMetric.Eklase\LaMetric.Eklase.fsproj" />
+    <ProjectReference Include="..\LaMetric.Kengaroos\LaMetric.Kengaroos.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FSharpx.Extras">
+      <HintPath>..\ExternalLibs\FSharpx.Extras.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+
+</Project>

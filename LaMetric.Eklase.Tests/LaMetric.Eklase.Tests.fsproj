@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Diary.html" />
+    <EmbeddedResource Include="Diary2.html" />
+    <EmbeddedResource Include="Diary3.html" />
+    <EmbeddedResource Include="Diary4.html" />
+    <EmbeddedResource Include="Mark.html" />
+    <EmbeddedResource Include="Mark2.html" />
+    <Compile Include="TestCommon.fs" />
+    <Compile Include="DiaryUrlTests.fs" />
+    <Compile Include="ParserTests.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unquote" Version="6.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaMetric.Eklase\LaMetric.Eklase.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

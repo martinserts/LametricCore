@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lametric
+spec:
+  selector:
+    matchLabels:
+      app: lametric
+  template:
+    metadata:
+      labels:
+        app: lametric
+    spec:
+      imagePullSecrets:
+        - name: localdockersecrets
+      containers:
+      - name: lametric
+        image: registry.fprog.club/lametric:{{ tag }}
+        env:
+          - name: EKLASE_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: lametric
+                key: username
+          - name: EKLASE_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: lametric
+                key: password
+        resources:
+          limits:
+            memory: "100Mi"
+            cpu: "200m"
+          requests:
+            memory: "50Mi"
+            cpu: "50m"
+        ports:
+        - containerPort: 8090
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lametric
+spec:
+  selector:
+    app: lametric
+  ports:
+  - port: 8090
+    targetPort: 8090

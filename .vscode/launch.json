@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "name": "LametricApp.fsproj: LametricApp",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "/Users/martinserts/Projects/fsharp/LametricCore/LametricApp/bin/Debug/net6.0/LametricApp.dll",
+      "args": [
+        ""
+      ],
+      "preLaunchTask": "Build: LametricApp.fsproj",
+      "cwd": "${workspaceFolder}",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:54060/",
+        "KENGAROOS_CALENDAR_URL": "http://kengaros.lv/index.php/raspisanie",
+        "EKLASE_LOGOUT_URL": "https://my.e-klase.lv/LogOut",
+        "EKLASE_DIARY_URL": "https://my.e-klase.lv/Family/Diary",
+        "EKLASE_LOGIN_URL": "https://my.e-klase.lv/?v=15",
+        "EKLASE_MARK_URL": "https://my.e-klase.lv/Family/MarkFile/Get"
+      },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "presentation": {
+        "group": "ionide",
+        "hidden": false
+      }
+    }
+  ]
+}

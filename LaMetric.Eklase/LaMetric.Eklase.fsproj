@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="icon_divide.png" />
+    <EmbeddedResource Include="icon_eight.png" />
+    <EmbeddedResource Include="icon_eight2.png" />
+    <EmbeddedResource Include="icon_five.png" />
+    <EmbeddedResource Include="icon_five2.png" />
+    <EmbeddedResource Include="icon_four.png" />
+    <EmbeddedResource Include="icon_four2.png" />
+    <EmbeddedResource Include="icon_minus.png" />
+    <EmbeddedResource Include="icon_nine.png" />
+    <EmbeddedResource Include="icon_nine2.png" />
+    <EmbeddedResource Include="icon_one.png" />
+    <EmbeddedResource Include="icon_one2.png" />
+    <EmbeddedResource Include="icon_plus.png" />
+    <EmbeddedResource Include="icon_seven.png" />
+    <EmbeddedResource Include="icon_seven2.png" />
+    <EmbeddedResource Include="icon_six.png" />
+    <EmbeddedResource Include="icon_six2.png" />
+    <EmbeddedResource Include="icon_ten.png" />
+    <EmbeddedResource Include="icon_ten2.png" />
+    <EmbeddedResource Include="icon_three.png" />
+    <EmbeddedResource Include="icon_three2.png" />
+    <EmbeddedResource Include="icon_two.png" />
+    <EmbeddedResource Include="icon_two2.png" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="IconLoader.fs" />
+    <Compile Include="EklaseWebClient.fs" />
+    <Compile Include="DataTypes.fs" />
+    <Compile Include="MarkParser.fs" />
+    <Compile Include="ScoreUpgrader.fs" />
+    <Compile Include="LessonDayParser.fs" />
+    <Compile Include="NotificationGenerator.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chessie" Version="0.6.0" />
+    <PackageReference Include="FSharp.Data" Version="4.2.8" />
+    <PackageReference Include="NodaTime" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaMetric.Common\LaMetric.Common.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FSharpx.Extras">
+      <HintPath>..\ExternalLibs\FSharpx.Extras.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

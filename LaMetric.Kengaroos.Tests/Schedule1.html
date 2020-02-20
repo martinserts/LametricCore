@@ -1,0 +1,969 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+    <base href="http://kengaros.lv/index.php/raspisanie" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="FUTBOL" />
+    <meta name="generator" content="Joomla! - Open Source Content Management" />
+    <title>Kengaroos</title>
+    <link href="http://kengaros.lv/templates/gk_gamenews/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="/media/system/css/modal.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/gk_gamenews/css/k2.css" type="text/css" />
+    <link rel="stylesheet" href="/components/com_rseventspro/assets/css/style.css?v=6" type="text/css" />
+    <link rel="stylesheet" href="/components/com_rseventspro/assets/css/j3.css?v=6" type="text/css" />
+    <link rel="stylesheet" href="/components/com_rseventspro/assets/css/calendar.css?v=6" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/tablet.css" type="text/css" media="(max-width: 920px)" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/mobile.css" type="text/css" media="(max-width: 540px)" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/joomla.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/system/system.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/template.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/menu/menu.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/gk.stuff.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/style3.css" type="text/css" />
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/typography/typography.style3.css" type="text/css" />
+    <style type="text/css">
+        .gkcol {
+            width: 220px;
+        }
+
+        @media screen and (max-width: 690px) {
+            #k2Container .itemsContainer {
+                width: 100% !important;
+            }
+
+            .cols-2 .column-1,
+            .cols-2 .column-2,
+            .cols-3 .column-1,
+            .cols-3 .column-2,
+            .cols-3 .column-3,
+            .demo-typo-col2,
+            .demo-typo-col3,
+            .demo-typo-col4 {
+                width: 100%;
+            }
+        }
+
+        #system-message-container {
+            margin: 0 -20px;
+        }
+
+        body,
+        .gkMenu > ul div.childcontent header small,
+        .nspHeader,
+        .nspLinks ul li h4,
+        #gkBottom2 .header {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6,
+        #gkLogo.text,
+        #gkMainMenu,
+        .gkMenu > ul div.childcontent header a,
+        .box .header,
+        .readon,
+        .gkTabsNav {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .blank {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .blank {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #gkSidebar {
+            width: 30%;
+        }
+
+        #gkContent {
+            width: 70%;
+        }
+
+        #gkPage, #gkTopBar > div, .gkFooter, #gkBottom2 {
+            max-width: 1200px;
+        }
+
+        body {
+            padding: 0 20px;
+        }
+
+        #menu333 > div,
+        #menu333 > div > .childcontent-inner {
+            width: 220px;
+        }
+    </style>
+    <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+    <script src="/media/system/js/core.js" type="text/javascript"></script>
+    <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+    <script src="/media/system/js/modal.js" type="text/javascript"></script>
+    <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="/media/k2/assets/js/k2.noconflict.js" type="text/javascript"></script>
+    <script src="/components/com_k2/js/k2.js" type="text/javascript"></script>
+    <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/components/com_rseventspro/assets/js/scripts.js?v=6" type="text/javascript"></script>
+    <script src="/components/com_rseventspro/assets/js/FloatingTips.js?v=6" type="text/javascript"></script>
+    <script src="/components/com_rseventspro/assets/js/select.js?v=6" type="text/javascript"></script>
+    <script src="http://kengaros.lv/templates/gk_gamenews/js/gk.scripts.js" type="text/javascript"></script>
+    <script src="http://kengaros.lv/templates/gk_gamenews/js/gk.menu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('a.modal'), {
+				parse: 'rel'
+			});
+		});
+var K2SitePath = '/';
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('.rs_modal'), {
+				parse: 'rel'
+			});
+		});
+jQuery(document).ready(function() {
+					jQuery('.hasTooltip').tooltip({});
+				});
+var rsepro_root = '/';
+ $GKMenu = { height:true, width:true, duration: 250 };
+$GK_TMPL_URL = "http://kengaros.lv/templates/gk_gamenews";
+
+$GK_URL = "http://kengaros.lv/";
+
+    </script>
+    <!--[if IE 7]>
+                  <style type="text/css">
+                      .elSelect { width: 200px; }
+                      .optionsContainer { margin-top: -30px; }
+                      .selectedOption { width: 165px !important; }
+                  </style>
+                  <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/ie/ie9.css" type="text/css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/ie/ie8.css" type="text/css" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="http://kengaros.lv/templates/gk_gamenews/css/ie/ie7.css" type="text/css" />
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="http://kengaros.lv/templates/gk_gamenews/js/respond.js"></script>
+    <script type="text/javascript" src="http://kengaros.lv/templates/gk_gamenews/js/selectivizr.js"></script>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body data-tablet-width="960" data-mobile-width="580" data-bg="2">
+
+
+    <div id="gkPage">
+
+        <section id="gkPageTop">
+
+            <a href="/./" id="gkLogo">
+                <img src="http://kengaros.lv/images/images/logo4.jpg" alt="Kengaroos" />
+            </a>
+
+            <div id="gkMobileMenu">
+                Menu		    	<select onChange="window.location.href=this.value;">
+                    <option value="http://kengaros.lv/">Главная</option>
+                    <option value="/index.php/template">О клубе</option>
+                    <option selected="selected" value="/index.php/raspisanie">Расписание</option>
+                    <option value="/index.php/k2">Команды</option>
+                    <option value="/index.php/2012-09-24-12-46-49">Турниры</option>
+                    <option value="#">Чемпионаты</option>
+                    <option value="/index.php/2015-05-25-13-00-59/2015-05-25-13-03-27">&nbsp;&nbsp;&raquo;Чемпионаты латвии</option>
+                    <option value="/index.php/2015-05-25-13-00-59/2015-05-25-13-04-22">&nbsp;&nbsp;&raquo;Чемпионаты Земгале</option>
+                    <option value="/index.php/2015-05-25-13-00-59/liga">&nbsp;&nbsp;&raquo;Лига</option>
+                    <option value="/index.php/2015-05-25-13-00-59/liga-fultzal">&nbsp;&nbsp;&raquo;Лига- Fultzal</option>
+                    <option value="/index.php/2012-09-24-12-45-37">Полезная информация</option>
+                    <option value="/index.php/2015-05-25-10-23-28">Фотогалерея</option>
+                    <option value="/index.php/2015-05-25-10-23-44">Контакты</option>
+                </select>
+            </div>
+
+
+            <div id="gkMainMenu">
+                <nav id="gkExtraMenu" class="gkMenu">
+                    <ul class="gkmenu level0">
+                        <li class="first"><a href="http://kengaros.lv/" class=" first" id="menu101" title="Главная">Главная</a></li>
+                        <li><a href="/index.php/template" id="menu102" title="О клубе">О клубе</a></li>
+                        <li class="active"><a href="/index.php/raspisanie" class=" active" id="menu112" title="Расписание">Расписание</a></li>
+                        <li><a href="/index.php/k2" id="menu303" title="Команды">Команды</a></li>
+                        <li><a href="/index.php/2012-09-24-12-46-49" id="menu149" title="Турниры">Турниры</a></li>
+                        <li class="haschild">
+                            <a class=" haschild" id="menu333" title="Чемпионаты">Чемпионаты</a><div class="childcontent">
+                                <div class="childcontent-inner">
+                                    <div class="gkcol gkcol1  first"><ul class="gkmenu level1"><li class="first"><a href="/index.php/2015-05-25-13-00-59/2015-05-25-13-03-27" class=" first" id="menu334" title="Чемпионаты латвии">Чемпионаты латвии</a></li><li><a href="/index.php/2015-05-25-13-00-59/2015-05-25-13-04-22" id="menu335" title="Чемпионаты Земгале">Чемпионаты Земгале</a></li><li><a href="/index.php/2015-05-25-13-00-59/liga" id="menu392" title="Лига">Лига</a></li><li class="last"><a href="/index.php/2015-05-25-13-00-59/liga-fultzal" class=" last" id="menu393" title="Лига- Fultzal">Лига- Fultzal</a></li></ul></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/index.php/2012-09-24-12-45-37" id="menu148" title="Полезная информация">Полезная информация</a></li>
+                        <li><a href="/index.php/2015-05-25-10-23-28" id="menu326" title="Фотогалерея">Фотогалерея</a></li>
+                        <li class="last"><a href="/index.php/2015-05-25-10-23-44" class=" last" id="menu327" title="Контакты">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+        <div id="gkPageContent">
+
+            <section id="gkContent">
+
+
+
+
+                <section id="gkBreadcrumb">
+
+
+                    <div id="gkTools">
+                        <a href="#" id="gkToolsInc">A+</a>
+                        <a href="#" id="gkToolsReset">A</a>
+                        <a href="#" id="gkToolsDec">A-</a>
+                    </div>
+                </section>
+
+                <section id="gkMainbody">
+
+
+                    <form method="post" action="/index.php/raspisanie" name="adminForm" id="adminForm">
+
+                        <div class="rs_search" id="rs_calendar">
+                            <div class="rs_select_top" id="rs_select_top1">
+                                <select id="filter_from" name="filter_from[]" size="1">
+                                    <option value="events">Name</option>
+                                    <option value="description">Description</option>
+                                    <option value="locations">Location</option>
+                                    <option value="categories">Category</option>
+                                    <option value="tags">Tag</option>
+                                </select>
+                            </div>
+
+                            <div class="rs_select_top" id="rs_select_top2">
+                                <select id="filter_condition" name="filter_condition[]" size="1">
+                                    <option value="is">Is</option>
+                                    <option value="isnot">Is not</option>
+                                    <option value="contains">Contains</option>
+                                    <option value="notcontain">Does not contain</option>
+                                </select>
+                            </div>
+
+                            <div class="rs_select_top" style="position: relative;">
+                                <input type="text" name="search[]" id="rseprosearch" onkeyup="rs_search();" onkeydown="rs_stop();" value="" size="30" autocomplete="off" class="rs_input" />
+                                <button type="button" onclick="rs_add_filter();" class="rs_search_button"><span id="search_btn"></span></button>
+                                <ul class="rs_results" id="rs_results"></ul>
+                            </div>
+
+                            <div class="rs_clear"></div>
+
+                            <div class="rs_filter">
+                                <ul id="rs_filters"></ul>
+                            </div>
+                        </div>
+
+                        <div id="rs_calendar_component" class="rs_calendar_component">
+                            <table cellpadding="0" cellspacing="2" border="0" width="100%" class="rs_table">
+                                <tr>
+                                    <td align="left">
+                                        <a rel="nofollow" href="/index.php/raspisanie/05/2017" class="rs_calendar_arrows" id="rs_calendar_arrow_left">&laquo;</a>
+                                    </td>
+                                    <td align="center">
+                                        <select id="month" name="month" size="1" class="rs_cal_select" onchange="document.adminForm.submit()">
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6" selected="selected">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                        <select id="year" name="year" size="1" class="rs_cal_select" onchange="document.adminForm.submit()">
+                                            <option value="2008">2008</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2017" selected="selected">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                        </select>
+                                    </td>
+                                    <td align="right">
+                                        <a rel="nofollow" href="/index.php/raspisanie/07/2017" class="rs_calendar_arrows" id="rs_calendar_arrow_right">&raquo;</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="rs_calendar_component rs_table" cellpadding="0" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="3%">Week</th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                        <th>Saturday</th>
+                                        <th>Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="week">
+                                            <a href="/index.php/raspisanie/week/05-29-2017">22</a>
+                                        </td>
+                                        <td class="prev-month has-events">
+                                            <a href="/index.php/raspisanie/day/05-29-2017">
+                                                <span class="rs_calendar_date">29</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/750-2003-04-05-15-30-2002-00-16-30-2008-17-00" class="rsttip rse_event_link " title="2003''- 04''- 05''- 15.30.,   2002''- 00''- 16.30.,   2008''- 17.00.<br /><b>From</b> May 29, 2017 12:18<br /><b>To</b> May 29, 2017 12:18<br />">
+                                                    2003''- 04''- 05''- 15.30.,   2002''- 00''- 16.30.,   2008''- 17.00.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="prev-month has-events">
+                                            <a href="/index.php/raspisanie/day/05-30-2017">
+                                                <span class="rs_calendar_date">30</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/751-lat-cemp-u-15-16-30-salaspils-2009-2010-19-30-2006-2007-20-30" class="rsttip rse_event_link " title="Lat. Čemp.  U - 15 – 16.30 - Salaspils.,   2009''- 2010''- 19.30.,    2006''- 2007'- 20.30.<br /><b>From</b> May 30, 2017 12:20<br /><b>To</b> May 30, 2017 12:20<br />">
+                                                    Lat. Čemp.  U - 15 – 16.30 - Salaspils.,   2009''- 2010''- 19.30.,    2006''- 2007'- 20.30.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="prev-month has-events">
+                                            <a href="/index.php/raspisanie/day/05-31-2017">
+                                                <span class="rs_calendar_date">31</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/752-2003-04-05-15-30-2002-00-16-30-2008-17-00-2011-2012-18-00-2006-2007-19-00" class="rsttip rse_event_link " title="2003''- 04''- 05''- 15.30.,   2002''- 00''- 16.30.,   2008''- 17.00.,   2011''- 2012''- 18.00., 2006''- 2007''- 19.00.  <br /><b>From</b> May 31, 2017 12:21<br /><b>To</b> May 31, 2017 12:21<br />">
+                                                    2003''- 04''- 05''- 15.30.,   2002''- 00''- 16.30.,   2008''- 17.00.,   2011''- 2012''- 18.00., 2006''- 2007''- 19.00.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month curr-day has-events">
+                                            <a href="/index.php/raspisanie/day/06-01-2017">
+                                                <span class="rs_calendar_date">1</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/755-latv-cem-u-15-pl-13-00-salaspils-2011-2012-18-00-2009-2010-19-00" class="rsttip rse_event_link " title="Latv. Čem. U - 15 - pl.13.00 - Salaspils.,  2011''- 2012''- 18.00.,   2009''- 2010''- 19.00.<br /><b>From</b> June 01, 2017 20:53<br /><b>To</b> June 01, 2017 20:53<br />">
+                                                    Latv. Čem. U - 15 - pl.13.00 - Salaspils.,  2011''- 2012''- 18.00.,   2009''- 2010''- 19.00.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-02-2017">
+                                                <span class="rs_calendar_date">2</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/756-olimpiada-spele-u-16-pl-12-00-valmiera-turnir-2008-2009-staicele" class="rsttip rse_event_link " title="Olimpiada - spēle - U-16 - pl.12.00 - Valmiera.,   Turnir - 2008''- 2009'' - Staicele.<br /><b>From</b> June 02, 2017 20:55<br /><b>To</b> June 02, 2017 20:55<br />">
+                                                    Olimpiada - spēle - U-16 - pl.12.00 - Valmiera.,   Turnir - 2008''- 2009'' - Staicele.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-03-2017">
+                                                <span class="rs_calendar_date">3</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/757-turnirs-2008-2009-staicele" class="rsttip rse_event_link " title="Turnirs - 2008''- 2009''- Staicele.<br /><b>From</b> June 03, 2017 20:56<br /><b>To</b> June 03, 2017 20:56<br />">
+                                                    Turnirs - 2008''- 2009''- Staicele.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-04-2017">
+                                                <span class="rs_calendar_date">4</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/758-turnirs-2008-2009-staicele" class="rsttip rse_event_link " title="Turnirs - 2008''- 2009''- Staicele.<br /><b>From</b> June 04, 2017 20:57<br /><b>To</b> June 04, 2017 20:57<br />">
+                                                    Turnirs - 2008''- 2009''- Staicele.
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="week">
+                                            <a href="/index.php/raspisanie/week/06-05-2017">23</a>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-05-2017">
+                                                <span class="rs_calendar_date">5</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/759-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00''- 16.30.,<br /><b>From</b> June 05, 2017 20:36<br /><b>To</b> June 05, 2017 20:36<br />">
+                                                    2002''- 00''- 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-06-2017">
+                                                <span class="rs_calendar_date">6</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/760-2-liga-spele-pl-20-45-osvalda" class="rsttip rse_event_link " title="2.liga - Spēle - pl.20.45 - Osvalda.,  <br /><b>From</b> June 06, 2017 20:38<br /><b>To</b> June 06, 2017 20:38<br />">
+                                                    2.liga - Spēle - pl.20.45 - Osvalda.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-07-2017">
+                                                <span class="rs_calendar_date">7</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/761-lat-cemp-u-16-13-00-salaspils" class="rsttip rse_event_link " title="Lat. Čemp.  U - 16 – 13.00 - Salaspils.,  <br /><b>From</b> June 07, 2017 20:39<br /><b>To</b> June 07, 2017 20:39<br />">
+                                                    Lat. Čemp.  U - 16 – 13.00 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-08-2017">
+                                                <span class="rs_calendar_date">8</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/762-lat-cemp-u-14-13-00-salaspils" class="rsttip rse_event_link " title="Lat. Čemp.  U -14 – 13.00 - Salaspils., <br /><b>From</b> June 08, 2017 20:40<br /><b>To</b> June 08, 2017 20:40<br />">
+                                                    Lat. Čemp.  U -14 – 13.00 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-09-2017">
+                                                <span class="rs_calendar_date">9</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/763-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00'' - 16.30 .,    <br /><b>From</b> June 09, 2017 20:42<br /><b>To</b> June 09, 2017 22:41<br />">
+                                                    2002''- 00'' - 16.30 .,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-10-2017">
+                                                <span class="rs_calendar_date">10</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/764-lat-cemp-u-16-13-00-salaspils" class="rsttip rse_event_link " title="Lat. Čemp.  U - 16 – 13.00 - Salaspils.,  <br /><b>From</b> June 10, 2017 20:43<br /><b>To</b> June 10, 2017 20:43<br />">
+                                                    Lat. Čemp.  U - 16 – 13.00 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-11-2017">
+                                                <span class="rs_calendar_date">11</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/765-zem-cem-2010-10-00-olaine-2-liga-spele-13-15-49-vsk" class="rsttip rse_event_link " title="Zem.čem - 2010''- 10.00 - Olaine.,   2.liga - Spele - 13.15 - 49.vsk.,  <br /><b>From</b> June 11, 2017 20:46<br /><b>To</b> June 11, 2017 20:46<br />">
+                                                    Zem.čem - 2010''- 10.00 - Olaine.,   2.liga - Spele - 13.15 - 49.vsk.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="week">
+                                            <a href="/index.php/raspisanie/week/06-12-2017">24</a>
+                                        </td>
+                                        <td class="curr-month">
+                                            <a href="/index.php/raspisanie/day/06-12-2017">
+                                                <span class="rs_calendar_date">12</span>
+                                            </a>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-13-2017">
+                                                <span class="rs_calendar_date">13</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/766-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00'' - 16.30., <br /><b>From</b> June 13, 2017 20:47<br /><b>To</b> June 13, 2017 20:47<br />">
+                                                    2002''- 00'' - 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-14-2017">
+                                                <span class="rs_calendar_date">14</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/767-2000-00-16-30" class="rsttip rse_event_link " title="2000''- 00''- 16.30.,  <br /><b>From</b> June 14, 2017 20:48<br /><b>To</b> June 14, 2017 20:48<br />">
+                                                    2000''- 00''- 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-15-2017">
+                                                <span class="rs_calendar_date">15</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/768-lat-cemp-u-15-12-00-sloka" class="rsttip rse_event_link " title="Lat. Čemp.  U -15 – 12.00 - Sloka., <br /><b>From</b> June 15, 2017 20:51<br /><b>To</b> June 15, 2017 20:51<br />">
+                                                    Lat. Čemp.  U -15 – 12.00 - Sloka.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-16-2017">
+                                                <span class="rs_calendar_date">16</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/769-2-liga-spele-pl-19-30-jurnieks" class="rsttip rse_event_link " title="2.liga - Spele - pl.19.30 - Jūrnieks., <br /><b>From</b> June 16, 2017 20:52<br /><b>To</b> June 16, 2017 20:52<br />">
+                                                    2.liga - Spele - pl.19.30 - Jūrnieks.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-17-2017">
+                                                <span class="rs_calendar_date">17</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/770-lat-cemp-u-14-12-00-jelgava" class="rsttip rse_event_link " title="Lat. Čemp.  U -14 – 12.00 - Jēlgava., <br /><b>From</b> June 17, 2017 20:54<br /><b>To</b> June 17, 2017 20:54<br />">
+                                                    Lat. Čemp.  U -14 – 12.00 - Jēlgava.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-18-2017">
+                                                <span class="rs_calendar_date">18</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/771-2002-00-11-00" class="rsttip rse_event_link " title="2002''- 00'' - 11.00., <br /><b>From</b> June 18, 2017 21:34<br /><b>To</b> June 18, 2017 21:34<br />">
+                                                    2002''- 00'' - 11.00.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="week">
+                                            <a href="/index.php/raspisanie/week/06-19-2017">25</a>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-19-2017">
+                                                <span class="rs_calendar_date">19</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/772-zem-cem-2006-pl-10-00-salaspils-2002-00-16-30" class="rsttip rse_event_link " title="Zem.čem - 2006''- pl.10.00 - Salaspils.,  2002''- 00''- 16.30.,  <br /><b>From</b> June 19, 2017 20:56<br /><b>To</b> June 19, 2017 20:56<br />">
+                                                    Zem.čem - 2006''- pl.10.00 - Salaspils.,  2002''- 00''- 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-20-2017">
+                                                <span class="rs_calendar_date">20</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/773-lat-cemp-u-16-13-00-sloka-zem-cem-2007-10-00-olaine" class="rsttip rse_event_link " title="Lat. Čemp.  U - 16 – 13.00 - Sloka.,   Zem.čem. - 2007'' - 10.00 - Olaine.<br /><b>From</b> June 20, 2017 21:34<br /><b>To</b> June 20, 2017 21:35<br />">
+                                                    Lat. Čemp.  U - 16 – 13.00 - Sloka.,   Zem.čem. - 2007'' - 10.00 - Olaine.
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month">
+                                            <a href="/index.php/raspisanie/day/06-21-2017">
+                                                <span class="rs_calendar_date">21</span>
+                                            </a>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-22-2017">
+                                                <span class="rs_calendar_date">22</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/774-lat-cemp-u-16-13-00-salaspils-lat-cem-u-14-15-00-salaspils" class="rsttip rse_event_link " title="Lat. Čemp.  U - 16 – 13.00 - Salaspils.,  Lat.Čem. U - 14 - 15.00 - Salaspils., <br /><b>From</b> June 22, 2017 20:59<br /><b>To</b> June 22, 2017 20:59<br />">
+                                                    Lat. Čemp.  U - 16 – 13.00 - Salaspils.,  Lat.Čem. U - 14 - 15.00 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-23-2017">
+                                                <span class="rs_calendar_date">23</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/775-ligo" class="rsttip rse_event_link " title="Ligo<br /><b>From</b> June 23, 2017 21:31<br /><b>To</b> June 23, 2017 21:31<br />">
+                                                    Ligo
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-24-2017">
+                                                <span class="rs_calendar_date">24</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/776-ligo" class="rsttip rse_event_link " title="Ligo<br /><b>From</b> June 24, 2017 21:01<br /><b>To</b> June 24, 2017 21:01<br />">
+                                                    Ligo
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-25-2017">
+                                                <span class="rs_calendar_date">25</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/777-ligo" class="rsttip rse_event_link " title="Ligo<br /><b>From</b> June 25, 2017 21:02<br /><b>To</b> June 25, 2017 21:02<br />">
+                                                    Ligo
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="week">
+                                            <a href="/index.php/raspisanie/week/06-26-2017">26</a>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-26-2017">
+                                                <span class="rs_calendar_date">26</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/778-2-liga-spele-pl-19-30-salaspils" class="rsttip rse_event_link " title="2.liga - Spele - pl.19.30 - Salaspils., <br /><b>From</b> June 26, 2017 21:03<br /><b>To</b> June 26, 2017 21:03<br />">
+                                                    2.liga - Spele - pl.19.30 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-27-2017">
+                                                <span class="rs_calendar_date">27</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/779-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00'' - 16.30., <br /><b>From</b> June 27, 2017 21:04<br /><b>To</b> June 27, 2017 21:04<br />">
+                                                    2002''- 00'' - 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-28-2017">
+                                                <span class="rs_calendar_date">28</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/780-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00''- 16.30., <br /><b>From</b> June 28, 2017 21:05<br /><b>To</b> June 28, 2017 21:05<br />">
+                                                    2002''- 00''- 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-29-2017">
+                                                <span class="rs_calendar_date">29</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/781-lat-cemp-u-16-12-00-salaspils" class="rsttip rse_event_link " title="Lat. Čemp.  U - 16 – 12.00 - Salaspils.,   <br /><b>From</b> June 29, 2017 21:05<br /><b>To</b> June 29, 2017 21:06<br />">
+                                                    Lat. Čemp.  U - 16 – 12.00 - Salaspils.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="curr-month has-events">
+                                            <a href="/index.php/raspisanie/day/06-30-2017">
+                                                <span class="rs_calendar_date">30</span>
+                                            </a>
+                                            <div class="rs_calendar_details rs_calendar_events" style="">
+                                                <a href="/index.php/raspisanie/event/782-2002-00-16-30" class="rsttip rse_event_link " title="2002''- 00''- 16.30.,  <br /><b>From</b> June 30, 2017 21:06<br /><b>To</b> June 30, 2017 21:07<br />">
+                                                    2002''- 00''- 16.30.,
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="next-month">
+                                            <a href="/index.php/raspisanie/day/07-01-2017">
+                                                <span class="rs_calendar_date">1</span>
+                                            </a>
+                                        </td>
+                                        <td class="next-month">
+                                            <a href="/index.php/raspisanie/day/07-02-2017">
+                                                <span class="rs_calendar_date">2</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="rs_clear"></div>
+                        <br />
+
+
+                        <input type="hidden" name="rs_clear" id="rs_clear" value="0" />
+                        <input type="hidden" name="rs_remove" id="rs_remove" value="" />
+                        <input type="hidden" name="option" value="com_rseventspro" />
+                        <input type="hidden" name="view" value="calendar" />
+                    </form>
+
+                    <script type="text/javascript">
+
+	window.addEvent('domready', function(){
+			new elSelect( {container : 'rs_select_top1'} );
+		new elSelect( {container : 'rs_select_top2'} );
+
+		window.event_hovering = 0;
+	$$('body').addEvent('mouseover', function(evt){
+		if (evt.target) {
+			if (!window.event_hovering) {
+				$$('#cloneevent').dispose();
+				$$('.rs_calendar_events a').set('style', 'visibility:visible');
+			}
+
+			if (evt.target.get('id') != 'cloneevent' && !evt.target.hasClass('rse_event_link')) {
+				window.event_hovering = 0;
+			}
+		}
+	});
+
+	$$('.rs_calendar_events a').each(function(el){
+		el.addEvent('mouseover', function() {
+			window.event_hovering = 1;
+		});
+		el.addEvent('mouseenter', function() {
+			el.set('style','visibility:hidden');
+			var eltitle = el.get('title');
+			var position = el.getPosition();
+			var clone = el.clone();
+			el.set('styles', {
+				display: 'inline-block'
+			});
+			clone.set('id','cloneevent');
+			clone.set('title',eltitle);
+			clone.set('styles', {
+				position: 'absolute',
+				visibility: 'visible'
+			});
+			clone.setPosition(position);
+			cloneposition = clone.getPosition();
+			clone.addEvent('mouseleave', function() {
+				window.event_hovering = 0;
+				clone.dispose();
+				el.set('style','visibility:visible');
+				el.setPosition(cloneposition);
+			});
+			clone.addEvent('mouseover', function() {
+				window.event_hovering = 1;
+			});
+
+			document.id(document.body).adopt(clone);
+			new FloatingTips('.rsttip', { position: 'bottom', html: true });
+		});
+	});
+		});
+                    </script>
+                </section>
+
+            </section>
+
+            <aside id="gkSidebar">
+                <div class="box  nomargin">
+                    <div>
+                        <h3 class="header"><span id="module105">Прогноз погоды</span></h3><div class="content">
+
+                            <div class="custom">
+
+                                <!-- Gismeteo informer START -->
+                                <link rel="stylesheet" type="text/css" href="http://www.gismeteo.lv/static/css/informer2/gs_informerClient.min.css">
+                                <div id="gsInformerID-wIMKLkO8RuGaCq" class="gsInformer" style="width:210px;height:183px">
+                                    <div class="gsIContent">
+                                        <div id="cityLink">
+                                            <a href="http://www.gismeteo.lv/ru/city/daily/4109/" target="_blank">Погода в Саласпилсе</a>
+                                        </div>
+                                        <div class="gsLinks">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="leftCol">
+                                                            <a href="http://www.gismeteo.lv/ru" target="_blank">
+                                                                <img alt="Gismeteo" title="Gismeteo" src="http://www.gismeteo.lv/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+                                                                <span>Gismeteo</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="rightCol">
+                                                            <a href="http://www.gismeteo.lv/ru/city/weekly/4109/" target="_blank">Прогноз на 2 недели</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script src="http://www.gismeteo.lv/ajax/getInformer/?hash=wIMKLkO8RuGaCq" type="text/javascript"></script>
+                                <!-- Gismeteo informer END -->
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="box ">
+                    <div>
+                        <h3 class="header"><span id="module146">Дни рождения</span></h3><div class="content">
+
+                            <div class="custom">
+
+                                <p>Jūnija.</p>
+                                <p>01.06. - Adrians &nbsp;Gorodņičijs</p>
+                                <p>18.06. - Artjoms &nbsp;Kulikovs</p>
+                                <p>07.06. - Dmitrijs &nbsp;Starčenkovs</p>
+                                <p>13.06. - Otto &nbsp;Ilves</p>
+                                <p>17.06. - Kristers &nbsp;&Scaron;vans</p>
+                                <p>17.06. - Sergejs &nbsp;Momots</p>
+                                <p>19.06. - Ostins &nbsp;Denisjonoks</p>
+                                <p>21.06. - Iļja &nbsp;Ekss</p>
+                                <p>24.06. - Georgijs &nbsp;Fjodorovs</p>
+                                <p>25.06. - Edgars &nbsp;Strautiņ&scaron;</p>
+                                <p>28.06. - Makars &nbsp;Siņakovs</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="box ">
+                    <div>
+                        <div class="content">
+
+                            <div class="custom">
+
+                                <p><img src="/images/DSC_7127.JPG" alt="DSC 7127" width="349" height="232" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="box  light">
+                    <div>
+                        <h3 class="header"><span id="module117">Партнёры, спонсоры</span></h3><div class="content">
+
+                            <div class="custom light">
+
+                                <p><a href="/index.php/component/content/article/2-uncategorised/69-retro"><img src="/images/14.jpg" alt="14" width="199" height="138" /></a></p>
+                                <p><img src="/images/logo_salaspils.jpg" alt="" width="182" height="221" /></p>
+                                <p>&nbsp; &nbsp;<a href="http://www.salaspils.lv/"><img src="/images/salaspilsss_.png" alt="salaspilsss " /></a></p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.lff.lv/lv/news"><img src="/images/futbol_fediracija.png" alt="futbol fediracija" width="132" height="131" /></a></p>
+                                <p>&nbsp; &nbsp; &nbsp;<a href="http://www.fanupasaule.lv/"><img src="/images/Fanupasaule.jpg" alt="Fanupasaule" /></a></p>
+                                <p>&nbsp; &nbsp; &nbsp;<a href="http://www.footballfreestyle.ru/"><img src="/images/66.FootFreeStyle.jpg" alt="66.FootFreeStyle" width="150" height="120" /></a></p>
+                                <p>&nbsp; &nbsp; &nbsp;<a href="http://www.bcfl.eu/"><img src="/images/BCFL.jpg" alt="BCFL" /></a></p>
+                                <p>&nbsp; &nbsp; <a href="http://www.fotodavana.lv/"><img src="/images/Fotodavana.jpg" alt="Fotodavana" /></a></p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.kengaros.lv/"><img src="/images/Kango.gif" alt="Kango" width="145" height="196" /></a></p>
+                                <p>&nbsp;&nbsp;<img src="/images/Strela.png" alt="Strela" width="178" height="87" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+
+
+
+    <footer class="gkFooter">
+
+
+
+        <p class="gkCopyrights">Design &copy; eHost IT</p>
+    </footer>
+    <div id="gkTopBar">
+        <div>
+            <div class="social-icons">
+
+
+                <div class="custom">
+
+                    <p><a class="gkFb" href="#">Facebook</a> <a class="gkTwitter" href="#">Twitter</a> <a class="gkGplus" href="#">Google+</a> <a class="gkRss" href="#">RSS</a></p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <gavern:social>
+        <div id="gkfb-root"></div>
+        <script type="text/javascript">
+
+//<![CDATA[
+   	window.fbAsyncInit = function() {
+		FB.init({ appId: '171342606239806',
+			status: true,
+			cookie: true,
+			xfbml: true,
+			oauth: true
+		});
+
+	  		  	function updateButton(response) {
+	    	var button = document.getElementById('fb-auth');
+
+			if(button) {
+	    		if (response.authResponse) {
+	      		// user is already logged in and connected
+				button.onclick = function() {
+					if($('login-form')){
+						$('modlgn-username').set('value','Facebook');
+						$('modlgn-passwd').set('value','Facebook');
+						$('login-form').submit();
+					} else if($('com-login-form')) {
+					   $('username').set('value','Facebook');
+					   $('password').set('value','Facebook');
+					   $('com-login-form').submit();
+					}
+				}
+			} else {
+	      		//user is not connected to your app or logged out
+	      		button.onclick = function() {
+					FB.login(function(response) {
+					   if (response.authResponse) {
+					      if($('login-form')){
+					      	$('modlgn-username').set('value','Facebook');
+					      	$('modlgn-passwd').set('value','Facebook');
+					      	$('login-form').submit();
+					      } else if($('com-login-form')) {
+					         $('username').set('value','Facebook');
+					         $('password').set('value','Facebook');
+					         $('com-login-form').submit();
+					      }
+					  } else {
+					    //user cancelled login or did not grant authorization
+					  }
+					}, {scope:'email'});
+	      		}
+	    	}
+	    }
+	  }
+	  // run once with current status and whenever the status changes
+	  FB.getLoginStatus(updateButton);
+	  FB.Event.subscribe('auth.statusChange', updateButton);
+	  	};
+    //
+   window.addEvent('load', function(){
+        (function(){
+                if(!document.getElementById('fb-root')) {
+                     var root = document.createElement('div');
+                     root.id = 'fb-root';
+                     document.getElementById('gkfb-root').appendChild(root);
+                     var e = document.createElement('script');
+                 e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                     e.async = true;
+                 document.getElementById('fb-root').appendChild(e);
+                }
+        }());
+    });
+    //]]>
+        </script>
+    </gavern:social>
+
+    <!-- +1 button -->
+    <!-- twitter -->
+    <!-- Pinterest script -->
+
+
+</body>
+</html>

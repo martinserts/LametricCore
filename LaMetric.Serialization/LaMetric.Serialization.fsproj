@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Prelude.fs" />
+    <Compile Include="LowerCaseAttribute.fs" />
+    <Compile Include="TypeNaming.fs" />
+    <Compile Include="BigIntConverter.fs" />
+    <Compile Include="GuidConverter.fs" />
+    <Compile Include="ListConverter.fs" />
+    <Compile Include="OptionConverter.fs" />
+    <Compile Include="MapConverter.fs" />
+    <Compile Include="TupleArrayConverter.fs" />
+    <Compile Include="DuConverter.fs" />
+    <Compile Include="UnionConverter.fs" />
+    <Compile Include="Serialisation.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>

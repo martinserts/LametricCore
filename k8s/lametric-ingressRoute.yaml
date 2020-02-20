@@ -1,0 +1,36 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: lametricingressroutehttp
+  namespace: default
+
+spec:
+  entryPoints:
+    - web
+
+  routes:
+  - match: Host(`lametric.fprog.club`)
+    kind: Rule
+    services:
+    - name: lametric
+      port: 8090
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: lametricingressroutehttps
+  namespace: default
+
+spec:
+  entryPoints:
+    - websecure
+
+  routes:
+  - match: Host(`lametric.fprog.club`)
+    kind: Rule
+    services:
+    - name: lametric
+      port: 8090
+        
+  tls:
+    certResolver: myresolver

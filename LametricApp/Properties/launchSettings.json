@@ -1,0 +1,34 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:54059/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "KENGAROOS_CALENDAR_URL": "http://kengaros.lv/index.php/raspisanie",
+        "EKLASE_LOGOUT_URL": "https://my.e-klase.lv/LogOut",
+        "EKLASE_PASSWORD": "c2izvelk",
+        "EKLASE_DIARY_URL": "https://my.e-klase.lv/Family/Diary",
+        "EKLASE_USERNAME": "020409-20135",
+        "EKLASE_LOGIN_URL": "https://my.e-klase.lv/?v=15",
+        "EKLASE_MARK_URL": "https://my.e-klase.lv/Family/MarkFile/Get",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "LametricApp": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:54060/"
+    }
+  }
+}
