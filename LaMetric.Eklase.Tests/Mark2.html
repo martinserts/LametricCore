@@ -1,0 +1,68 @@
+﻿
+
+<a href="#" class="modal-close close-mark-file" data-dismiss="modal"></a>
+<h1>
+    Priekšmets:
+    Matemātika
+</h1>
+<div class="date">09.05.2017.</div>
+
+<div class="mark-card-inner">
+
+    <div class="mark-card-inner-title">
+        Pārbaudes darbs
+        <span>
+            Atzīme:
+            +
+        </span>
+    </div>
+
+    <div class="mark-card-inner-graph">
+
+        <div class="mark-card-inner-graph-descr">
+            <p>
+                Klases vidējā atzīme: <span></span>
+            </p>
+
+            <p>
+                Skolēna vieta:
+
+            </p>
+        </div>
+
+
+        <div class="mark-card-inner-graph-image">
+            <div class="tiny-graph" data-eklase=data-eklase></div>
+            <a href="/Family/ReportTest?TestId=4904331" class="btn btn-primary">Uz darba pārskatu</a>
+        </div>
+    </div>
+
+    <div class="mark-card-inner-content">
+        <p>
+            <span>Autors:</span>
+            Pavlova Nadežda (10.05.2017. 8:01)
+        </p>
+        <p>
+            <span>Tēma:</span>
+            Pieskaitām un atņemam vienus.
+        </p>
+    </div>
+
+
+
+</div>
+<script type="text/javascript">
+
+    addLoadingMessageBlock($(".tiny-graph"));
+
+    var scriptResources = ["/family/kendo-charts-js?v=WZ4FPXCIhFmlve3XbjrVFEHQYlQWyPe964U5ja7cDBU1"];
+    loadScriptResources(scriptResources, initChart);
+
+    function initChart() {
+    if (isBreakpoint('xs')) {
+    initHorizontalTinyChartWithParams($(".tiny-graph"), [3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,2.0,2.0,2.0], "0");
+    } else {
+    initTinyChartWithParams($(".tiny-graph"), [3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,2.0,2.0,2.0], "0");
+    }
+    }
+</script>
